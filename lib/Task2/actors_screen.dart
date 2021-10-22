@@ -10,46 +10,48 @@ class ActorsScreen extends StatelessWidget {
     List<Actor> items = [
       Actor(
         'assets/DSC_0030.JPG',
-        BioData('Ali', 'Hollywood', 'Pakistan'),
-        [SocialData(Icons.facebook, 'facebook.com')],
+        BioData('Ali', 'Ali Hassan', 'Hollywood', 'Pakistan'),
+        [
+          SocialData(Icons.facebook, 'facebook.com/AliHassan'),
+          SocialData(Icons.email_rounded, 'ahcheema12@gmail.com'),
+        ],
       ),
       Actor(
-        'assets/DSC_0030.JPG',
-        BioData('Kashif', 'Hollywood', 'Pakistan'),
-        [SocialData(Icons.facebook, 'facebook.com')],
+        'assets/actor2.jpg',
+        BioData('Kashif', 'Kashif Mehmood', 'Hollywood', 'Pakistan'),
+        [SocialData(Icons.facebook, 'facebook.com/M Kashif')],
       ),
       Actor(
-        'assets/DSC_0030.JPG',
-        BioData('Usama', 'Hollywood', 'Pakistan'),
-        [SocialData(Icons.facebook, 'facebook.com')],
+        'assets/Actor3.jpg',
+        BioData('Usama', 'Usama Ali', 'Hollywood', 'Pakistan'),
+        [SocialData(Icons.facebook, 'facebook.com/UsamaAli')],
       ),
       Actor(
-        'assets/DSC_0030.JPG',
-        BioData('Salman', 'Hollywood', 'Pakistan'),
-        [SocialData(Icons.facebook, 'facebook.com')],
+        'assets/Actor4.jpg',
+        BioData('Salman', 'Salman Khan', 'Hollywood', 'Pakistan'),
+        [SocialData(Icons.email, 'salmankhan@gmail.com')],
       ),
       Actor(
-        'assets/DSC_0030.JPG',
-        BioData('Zeeshan', 'Hollywood', 'Spain'),
-        [SocialData(Icons.facebook, 'facebook.com')],
+        'assets/Actor5.jpg',
+        BioData('Zeeshan', 'Zeeshan Ali', 'Hollywood', 'Spain'),
+        [SocialData(Icons.email_rounded, 'ZeeshanAli@gmail.com')],
       ),
       Actor(
-        'assets/DSC_0030.JPG',
-        BioData('Nisar', 'Hollywood', 'Italy'),
-        [SocialData(Icons.facebook, 'facebook.com')],
+        'assets/Actor6.jpg',
+        BioData('Nisar', 'Nisar Khan', 'Hollywood', 'Italy'),
+        [SocialData(Icons.email_rounded, 'Nisar@gmail.com')],
       ),
       Actor(
-        'assets/DSC_0030.JPG',
-        BioData('Farid', 'Hollywood', 'US'),
-        [SocialData(Icons.facebook, 'facebook.com')],
+        'assets/actor7.jpg',
+        BioData('Farid', 'Farid Ullah', 'Hollywood', 'US'),
+        [SocialData(Icons.email_rounded, 'Farid@gmail.com')],
       ),
       Actor(
-        'assets/DSC_0030.JPG',
-        BioData('Sufyan', 'Hollywood', 'UK'),
-        [SocialData(Icons.facebook, 'facebook.com')],
+        'assets/actor8.jpg',
+        BioData('Sufyan', 'Sufyan Ali', 'Hollywood', 'UK'),
+        [SocialData(Icons.email_rounded, 'Sufyan@gmail.com')],
       ),
     ];
-    // List<String> items = ['Ali', 'Kashif'];
 
     return Scaffold(
       backgroundColor: Colors.blue[900],
@@ -66,7 +68,6 @@ class ActorsScreen extends StatelessWidget {
               color: Colors.blue[500],
               child: InkWell(
                 onTap: () {
-                  print(items[index].bio.country);
                   Navigator.pushNamed(context, '/actor_detail',
                       arguments: items[index]);
                 },
@@ -87,7 +88,7 @@ class ActorsScreen extends StatelessWidget {
                         padding: const EdgeInsets.only(left: 8.0),
                         child: Text(
                           items[index].bio.name,
-                          style: TextStyle(fontSize: 20),
+                          style: const TextStyle(fontSize: 20),
                         ),
                       ),
                       const Spacer(),

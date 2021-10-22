@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+// import 'package:flutter_training/Task3/counterapp.dart';
 import 'package:flutter_training/routes.dart';
+
+// import 'Task2/actor_detail_screen.dart';
+// import 'Task2/actors_screen.dart';
 // import 'Task1/function.dart';
-import 'Task2/actors_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,13 +18,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     // ignore: dead_code
     return MaterialApp(
-      title: 'Flutter Training ',
-      theme: ThemeData(
-        primarySwatch: Colors.grey,
-      ),
-      routes: approutes,
-      initialRoute: '/',
-      // home: const ActorsScreen()
-    );
+        title: 'Flutter Training ',
+        theme: ThemeData(
+          primarySwatch: Colors.grey,
+        ),
+        routes: approutes,
+        initialRoute: '/');
   }
 }

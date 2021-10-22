@@ -1,5 +1,3 @@
-import 'dart:js';
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_training/Task2/actors_screen.dart';
 

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-class Actor {
+class Employee {
   String image;
   BioData bio;
   List<SocialData> social;
-  Actor(this.image, this.bio, this.social);
+  Employee(this.image, this.bio, this.social);
 }
 
 class BioData {

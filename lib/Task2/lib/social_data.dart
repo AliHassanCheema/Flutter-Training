@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 class Social extends StatelessWidget {
   final IconData myIcon;
-  final String text;
+  final String title;
 
-  const Social({Key? key, required this.myIcon, required this.text})
+  const Social({Key? key, required this.myIcon, required this.title})
       : super(key: key);
 
   @override
@@ -17,7 +17,7 @@ class Social extends StatelessWidget {
         ),
         const SizedBox(width: 20),
         Text(
-          text,
+          title,
           style: const TextStyle(
               color: Colors.amber, fontSize: 20, letterSpacing: 0),
         )

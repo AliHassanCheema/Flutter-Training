@@ -15,7 +15,7 @@ class Bio extends StatelessWidget {
       text,
       style: TextStyle(
           color: isHeading ? Colors.grey : Colors.amber,
-          fontSize: isHeading ? 18 : 24,
+          fontSize: isHeading ? 16 : 24,
           letterSpacing: isHeading ? 1 : 0,
           fontWeight: isHeading ? FontWeight.normal : FontWeight.bold),
     );
