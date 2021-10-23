@@ -35,11 +35,12 @@ class _MyHomePageState extends State<MyHomePage> {
       backgroundColor: Colors.grey[900],
       appBar: AppBar(
         title: const Center(
-          child: Text("Ali ID card", style: (TextStyle(color: Colors.white))),
+          child: Text("Ali Hassan ID card",
+              style: (TextStyle(color: Colors.white))),
         ),
       ),
       body: Padding(
-        padding: const EdgeInsets.fromLTRB(20, 40, 20, 0),
+        padding: const EdgeInsets.fromLTRB(20, 30, 20, 0),
         child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
           Center(
             child: ClipRRect(
@@ -53,13 +54,13 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           ),
           const SizedBox(
-            height: 40,
+            height: 12,
           ),
           const Divider(
             color: Colors.grey,
           ),
           const SizedBox(
-            height: 50,
+            height: 30,
           ),
           showData('Name', true),
           showData('ALi Hassan', false),
@@ -77,12 +78,12 @@ class _MyHomePageState extends State<MyHomePage> {
 
 Padding showData(String text, bool isHeading) {
   return Padding(
-    padding: EdgeInsets.only(bottom: isHeading ? 10 : 20),
+    padding: EdgeInsets.only(bottom: isHeading ? 8 : 20),
     child: Text(
       text,
       style: TextStyle(
           color: isHeading ? Colors.grey : Colors.amber,
-          fontSize: isHeading ? 18 : 24,
+          fontSize: isHeading ? 16 : 20,
           letterSpacing: isHeading ? 1 : 0,
           fontWeight: isHeading ? FontWeight.normal : FontWeight.bold),
     ),
@@ -91,7 +92,7 @@ Padding showData(String text, bool isHeading) {
 
 Padding rowData(String text, IconData myIcon, bool isLetterSpacing) {
   return Padding(
-      padding: const EdgeInsets.only(bottom: 25),
+      padding: const EdgeInsets.only(bottom: 10),
       child: Row(
         children: [
           Icon(

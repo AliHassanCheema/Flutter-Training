@@ -42,13 +42,9 @@ class EmployVM extends BaseViewModel {
       BioData('Farid', 'Farid Ullah', 'Hollywood', 'US'),
       [SocialData(Icons.email_rounded, 'Farid@gmail.com')],
     ),
-    Employee(
-      'assets/actor8.jpg',
-      BioData('Sufyan', 'Sufyan Ali', 'Hollywood', 'UK'),
-      [SocialData(Icons.email_rounded, 'Sufyan@gmail.com')],
-    ),
   ];
-  onItemClick(BuildContext context, String path, int index) {
-    Navigator.pushNamed(context, path, arguments: items[index]);
+  onItemClick(BuildContext context, int index) {
+    Navigator.pushNamed(context, '/employee_detail_screen',
+        arguments: items[index]);
   }
 }

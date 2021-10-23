@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 class CounterApp extends StatefulWidget {
   const CounterApp({Key? key}) : super(key: key);
+
   @override
   _CounterAppState createState() => _CounterAppState();
 }
@@ -13,63 +14,50 @@ class _CounterAppState extends State<CounterApp> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        backgroundColor: Colors.blue[500],
-        title: const Text('Counter App'),
-      ),
-      body: Center(
-        child: Text(
-          '$count',
-          style: const TextStyle(fontSize: 36, color: Colors.blueGrey),
+        backgroundColor: Colors.grey,
+        title: const Text(
+          'Counter App',
+          style: TextStyle(color: Colors.black),
         ),
       ),
+      body: Center(
+          child: Text(
+        '$count',
+        style: const TextStyle(color: Colors.white, fontSize: 60),
+      )),
       floatingActionButton: Row(
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
           FloatingActionButton(
-            hoverColor: Colors.green[400],
             onPressed: () {
               setState(() {
                 count++;
               });
             },
-            child: Icon(
-              Icons.plus_one,
-              color: Colors.blue[600],
-            ),
-            backgroundColor: Colors.blue[400],
-          ),
-          const SizedBox(
-            width: 8,
-          ),
-          FloatingActionButton(
             hoverColor: Colors.green[400],
+            child: const Icon(Icons.plus_one),
+          ),
+          const SizedBox(width: 8),
+          FloatingActionButton(
             onPressed: () {
               setState(() {
                 count--;
               });
             },
-            child: Icon(
-              Icons.exposure_minus_1,
-              color: Colors.blue[600],
-            ),
-            backgroundColor: Colors.blue[400],
+            hoverColor: Colors.red[800],
+            child: const Icon(Icons.exposure_minus_1),
           ),
-          const SizedBox(
-            width: 8,
-          ),
+          const SizedBox(width: 8),
           FloatingActionButton(
-            hoverColor: Colors.green[400],
             onPressed: () {
               setState(() {
                 count = 0;
               });
             },
-            child: Icon(
-              Icons.close_sharp,
-              color: Colors.blue[600],
-            ),
-            backgroundColor: Colors.blue[400],
+            hoverColor: Colors.blue[400],
+            child: const Icon(Icons.clear),
           ),
+          const SizedBox(width: 8),
         ],
       ),
     );

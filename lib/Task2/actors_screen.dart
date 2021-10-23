@@ -46,11 +46,6 @@ class ActorsScreen extends StatelessWidget {
         BioData('Farid', 'Farid Ullah', 'Hollywood', 'US'),
         [SocialData(Icons.email_rounded, 'Farid@gmail.com')],
       ),
-      Actor(
-        'assets/actor8.jpg',
-        BioData('Sufyan', 'Sufyan Ali', 'Hollywood', 'UK'),
-        [SocialData(Icons.email_rounded, 'Sufyan@gmail.com')],
-      ),
     ];
 
     return Scaffold(
@@ -68,7 +63,7 @@ class ActorsScreen extends StatelessWidget {
               color: Colors.blue[500],
               child: InkWell(
                 onTap: () {
-                  Navigator.pushNamed(context, '/actor_detail',
+                  Navigator.pushNamed(context, '/actor_detail_screen',
                       arguments: items[index]);
                 },
                 child: Padding(
