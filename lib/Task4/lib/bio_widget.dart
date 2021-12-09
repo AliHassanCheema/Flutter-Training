@@ -12,7 +12,7 @@ class Bio extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.only(bottom: isHeading ? 10 : 20),
+      padding: EdgeInsets.only(bottom: isHeading ? 4 : 12),
       child: Text(
         text,
         style: TextStyle(

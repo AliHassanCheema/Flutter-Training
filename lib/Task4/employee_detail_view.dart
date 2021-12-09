@@ -33,8 +33,11 @@ class EmloyeeDetailScreen extends ViewModelBuilderWidget<EmployeeDetailVM> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             ProfilePic(image: item.image),
-            const Divider(
-              color: Colors.white,
+            const Padding(
+              padding: EdgeInsets.only(bottom: 12),
+              child: Divider(
+                color: Colors.white,
+              ),
             ),
             const Bio(text: 'Name', isHeading: true),
             Bio(text: item.bio.name, isHeading: false),

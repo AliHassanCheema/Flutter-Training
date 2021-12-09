@@ -1,34 +1,8 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const MyID());
-}
-
 class MyID extends StatelessWidget {
   const MyID({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Training ',
-      theme: ThemeData(
-        primarySwatch: Colors.grey,
-      ),
-      home: const MyHomePage(title: 'Flutter training'),
-    );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key? key, required this.title}) : super(key: key);
-  final String title;
-
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -176,3 +150,4 @@ Padding rowData(String text, IconData myIcon, bool isLetterSpacing) {
           //         style: TextStyle(color: Colors.amber, fontSize: 20))
           //   ],
           // )
+ 

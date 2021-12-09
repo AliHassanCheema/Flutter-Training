@@ -11,13 +11,16 @@ class Bio extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(
-      text,
-      style: TextStyle(
-          color: isHeading ? Colors.grey : Colors.amber,
-          fontSize: isHeading ? 16 : 24,
-          letterSpacing: isHeading ? 1 : 0,
-          fontWeight: isHeading ? FontWeight.normal : FontWeight.bold),
+    return Container(
+      padding: EdgeInsets.only(bottom: isHeading ? 4 : 12),
+      child: Text(
+        text,
+        style: TextStyle(
+            color: isHeading ? Colors.grey : Colors.amber,
+            fontSize: isHeading ? 16 : 24,
+            letterSpacing: isHeading ? 1 : 0,
+            fontWeight: isHeading ? FontWeight.normal : FontWeight.bold),
+      ),
     );
   }
 }
